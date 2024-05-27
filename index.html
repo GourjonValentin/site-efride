@@ -30,18 +30,17 @@ $$$$$$$$\ $$ |          $$ |  $$ |$$ |\$$$$$$$ |\$$$$$$$\
         <div class="menu-logo">
             <a href="index.html#accueil"><img src="img/logos/Logo_EFRide_Bas.png"></a>
         </div>
-        <div class="menu-elem-right">
-            <div class="menu-hamburger">
-                <input id="menu-toggle" type="checkbox">
-                <label class="menu-btn" for="menu-toggle">
-                    <span></span>
-                </label>
-            </div>
-        </div>
         <nav>
             <ul class="menu-box">
                 <li><a href="index.html#section-accueil" class="menu-item">Accueil</a></li>
-                <li><a href="index.html#section-activites" class="menu-item">Nos&nbsp;activités</a></li>
+                <li class="dropdown">
+                    <a href="index.html#section-activites" class="menu-item">Nos&nbsp;activités</a>
+                    <ul class="dropdown-container">
+                        <li class="dropdown-elt"><a href="cyclisme.html">Cyclisme</a></li>
+                        <li class="dropdown-elt"><a href="roller.html">Roller</a></li>
+                        <li class="dropdown-elt"><a href="skateboard.html">Skateboard</a></li>
+                    </ul>
+                </li>
                 <li><a href="index.html#section-histoire" class="menu-item">Notre&nbsp;histoire</a></li>
                 <li><a href="index.html#section-equipe" class="menu-item">Notre&nbsp;équipe</a></li>
                 <li><a href="index.html#section-reseaux" class="menu-item">Nos&nbsp;réseaux</a></li>
@@ -80,7 +79,7 @@ $$$$$$$$\ $$ |          $$ |  $$ |$$ |\$$$$$$$ |\$$$$$$$\
                     <div class="icon">
                         <img src="img/icons/membres.png">
                     </div>
-                    <div class="number">12</div>
+                    <div class="number">22</div>
                     <div class="title">Membres</div>
                 </div>
                 <div class="counter">
@@ -251,6 +250,17 @@ $$$$$$$$\ $$ |          $$ |  $$ |$$ |\$$$$$$$ |\$$$$$$$\
                         </div>
                     </div>
 
+                    <div class="container left">
+                        <div class="content">
+                            <figure><img src="img/team/br-2024.jpg" alt=""></figure>
+                            <div class="text">
+                                <h2>Mars 2024</h2>
+                                <p class="desc">Développement de l'asso</p>
+                                <p>Nouvelle année, nouveau bureau. Eva M. et Mathis B. rejoignent le bureau restreint tandis que le reste des pôles s'agrandit : 2 respos roller, 2 respo skate, 1 respo roller et plus de 20 membres 1 an après la renaissance de l'association</p>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
             </section>
 
@@ -288,15 +298,7 @@ $$$$$$$$\ $$ |          $$ |  $$ |$$ |\$$$$$$$ |\$$$$$$$\
                             </div>
                         </div>
     
-                        <div class="team-card" id="respo-pole-restreint">
-                            <figure class="photo">
-                                <img src="img/team/inconnu.png">
-                            </figure>
-                            <div class="team-card-body">
-                                <h2>?</h2>
-                                <p class="statut">Vice-Président &amp; REFG</p>
-                            </div>
-                        </div>
+                        
     
                         <div class="team-card" id="eva-marot">
                             <figure class="photo">
@@ -304,8 +306,8 @@ $$$$$$$$\ $$ |          $$ |  $$ |$$ |\$$$$$$$ |\$$$$$$$\
                             </figure>
                             <div class="team-card-body">
                                 <h2>Eva&nbsp;MAROT</h2>
-                                <p class="statut">Trésorière</p>
-                                <p class="promo">L2-A ~ Promo 2027</p>
+                                <p class="statut">Trésorière & RFEG</p>
+                                <p class="promo">L2 ~ Promo 2027</p>
                                 <div class="team-card-links flex-container">
                                     <figure class="mail">
                                         <a href="mailto:eva.marot@efrei.net" target="_blank">
@@ -350,18 +352,7 @@ $$$$$$$$\ $$ |          $$ |  $$ |$$ |\$$$$$$$ |\$$$$$$$\
                     <h2>Les respos des pôles sportifs</h2>
                     <div class="horizontal-bar"></div>
                     <div class="team-cards-container flex-container">
-
-                        <div class="team-card" id="respo-pole-sportif-1">
-                            <figure class="photo">
-                                <img src="img/team/inconnu.png">
-                            </figure>
-                            <div class="team-card-body">
-                                <h2>?</h2>
-                                <p class="statut">Respo&nbsp;Cyclisme</p>
-                            </div>
-                        </div>
                         
-
                         <div class="team-card" id="louise-monciero">
                             <figure class="photo">
                                 <img src="img/team/photo_Louise.png">
@@ -384,8 +375,41 @@ $$$$$$$$\ $$ |          $$ |  $$ |$$ |\$$$$$$$ |\$$$$$$$\
                                 </div>
                             </div>
                         </div>
-
-                        <div class="team-card" id="respo-pole-sportif-3">
+                        
+                        <div class="team-card" id="fantin-chanard">
+                            <figure class="photo">
+                                <img src="img/team/inconnu.png">
+                            </figure>
+                            <div class="team-card-body">
+                                <h2>Fantin&nbsp;CHANARD</h2>
+                                <p class="statut">Co-Respo&nbsp;Roller</p>
+                                <p class="promo">M1 ~ Promo 202(</p>
+                                <div class="team-card-links flex-container">
+                                    <figure class="mail">
+                                        <a href="mailto:fantin.chanard@efrei.net" target="_blank">
+                                            <img src="img/medias/mail-blue.png">
+                                        </a>
+                                    </figure>
+                                    <figure class="linkedin">
+                                        <a href="https://www.linkedin.com/in/fantin-chanard/" target="_blank">
+                                            <img src="img/medias/linkedin.png">
+                                        </a>
+                                    </figure>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="team-card" id="respo-pole-sportif-1">
+                            <figure class="photo">
+                                <img src="img/team/inconnu.png">
+                            </figure>
+                            <div class="team-card-body">
+                                <h2>?</h2>
+                                <p class="statut">Respo&nbsp;Cyclisme</p>
+                            </div>
+                        </div>
+                        
+                        <div class="team-card" id="respo-pole-sportif-4">
                             <figure class="photo">
                                 <img src="img/team/inconnu.png">
                             </figure>
@@ -395,13 +419,13 @@ $$$$$$$$\ $$ |          $$ |  $$ |$$ |\$$$$$$$ |\$$$$$$$\
                             </div>
                         </div>
 
-                        <div class="team-card" id="respo-pole-sportif-4">
+                        <div class="team-card" id="respo-pole-sportif-5">
                             <figure class="photo">
                                 <img src="img/team/inconnu.png">
                             </figure>
                             <div class="team-card-body">
                                 <h2>?</h2>
-                                <p class="statut">Autres respos</p>
+                                <p class="statut">Co-Respo Skate</p>
                             </div>
                         </div>
 
@@ -436,22 +460,22 @@ $$$$$$$$\ $$ |          $$ |  $$ |$$ |\$$$$$$$ |\$$$$$$$\
                             </div>
                         </div>
     
-                        <div class="team-card" id="natis-beaurepere">
+                        <div class="team-card" id="mathias-benoit">
                             <figure class="photo">
-                                <img src="img/team/photo_Natis.png">
+                                <img src="img/team/inconnu.png">
                             </figure>
                             <div class="team-card-body">
-                                <h2>Natis&nbsp;BEAUREPERE</h2>
+                                <h2>Mathias&nbsp;BENOIT</h2>
                                 <p class="statut">Respo&nbsp;Design</p>
-                                <p class="promo">L2-INT ~ Promo 2027</p>
+                                <p class="promo">L2 ~ Promo 2027</p>
                                 <div class="team-card-links flex-container">
                                     <figure class="mail">
-                                        <a href="mailto:natis.beaurepere@efrei.net" target="_blank">
+                                        <a href="mailto:mathias.benoit@efrei.net" target="_blank">
                                             <img src="img/medias/mail-blue.png">
                                         </a>
                                     </figure>
                                     <figure class="linkedin">
-                                        <a href="https://www.linkedin.com/in/natis-beaurepere-039a1b251/" target="_blank">
+                                        <a href="https://www.linkedin.com/in/mathias-benoit15/" target="_blank">
                                             <img src="img/medias/linkedin.png">
                                         </a>
                                     </figure>
@@ -465,7 +489,7 @@ $$$$$$$$\ $$ |          $$ |  $$ |$$ |\$$$$$$$ |\$$$$$$$\
                             </figure>
                             <div class="team-card-body">
                                 <h2>Valentin&nbsp;GOURJON</h2>
-                                <p class="statut">Référent&nbsp;Handicap</p>
+                                <p class="statut">Respo&nbsp;Tech&nbsp;& Réf&nbsp;Handi</p>
                                 <p class="promo">L2 ~ Promo 2027</p>
                                 <div class="team-card-links flex-container">
                                     <figure class="mail">
@@ -480,17 +504,7 @@ $$$$$$$$\ $$ |          $$ |  $$ |$$ |\$$$$$$$ |\$$$$$$$\
                                     </figure>
                                 </div>
                             </div>
-                        </div>
-    
-                        <div class="team-card" id="respo-pole-interne-4">
-                            <figure class="photo">
-                                <img src="img/team/inconnu.png">
-                            </figure>
-                            <div class="team-card-body">
-                                <h2>?</h2>
-                                <p class="statut">Respos Tech, Events, Partenariats</p>
-                            </div>
-                        </div>
+                        </div>                        
     
                     </div>
                 </div>
